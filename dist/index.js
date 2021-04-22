@@ -41,9 +41,9 @@ async function run() {
           var ELAPSE_ms = current.getTime() - created_at.getTime();
           var ELAPSE_days = ELAPSE_ms / (1000 * 3600 * 24);
           
-          if (ELAPSE_days >= retain_days) {
-            del_runs.push(response.data.workflow_runs[index].id);
-          }
+          // if (ELAPSE_days >= retain_days) {
+          del_runs.push(response.data.workflow_runs[index].id);
+          // }
         }
       }
       
